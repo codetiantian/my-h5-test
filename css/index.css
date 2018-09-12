@@ -1,0 +1,79 @@
+/*核心产品*/
+.coreProductBox {
+    text-align: center;
+    background: #fff url(../source/coreProduct.png) 0 0 no-repeat;
+    padding-top: 30px;
+    padding-bottom: 90px;
+}
+
+.coreProductImgsBox {
+    display: flex;
+    justify-content: center;
+}
+
+.coreProductItem {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.coreProductImgItemBox {
+    width: 300px;
+    height: 330px;
+    position: relative;
+    overflow: hidden;
+
+    /*box-shadow: -5px -5px 5px  rgba(175,175,175, 0.8);*/
+}
+
+
+/*核心产品蒙板样式*/
+.coreProductMsk {
+    display: block;
+    text-align: left;
+    width: 300px;
+    height: 330px;
+    background: black;
+    position: absolute;
+    opacity: 0.6;
+    top: 330px;
+    left: 0px;
+
+    transition: top 0.5s;
+    -moz-transition:top 0.5s; /* Firefox 4 */
+    -webkit-transition:top 0.5s; /* Safari and Chrome */
+    -o-transition:top 0.5s; /* Opera */
+}
+
+
+.coreProductImgItemBox:hover .coreProductMsk{
+    top: 0px;
+}
+
+/*字体颜色*/
+.coreProductTitleFont {
+    font-size: 32px;
+    color: rgb(63, 50, 49);
+    font-weight: bold;
+    font-family: "Microsoft YaHei";
+}
+
+.coreProductSubTitleFont {
+    font-size: 17px;
+    color: rgb(107, 108, 112);
+}
+
+.coreProductMskTitle {
+    color: white;
+    font-size: 26px;
+    font-weight: bolder;
+    padding: 0px 15px;
+    margin-top: 20px;
+}
+
+.coreProductMskSubTitle {
+    color: white;
+    font-size: 9px;
+    padding: 0px 15px;
+    line-height: 25px;
+    margin-top: 25px;
+}
